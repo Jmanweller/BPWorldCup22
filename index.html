@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif; margin:0;}
+
+  .container  {
+   max-width: 1620px
+  }
+  
+   .container2  {
+   max-width: 1280px;
+   height: auto;
+  }
+
+.gold{
+  background-color: #d4af37;
+}
+.background-right{
+  border-radius: 0px 10px 10px 0px;
+}
+.background-left{
+  border-radius: 10px 0 0 10px;
+}
+.silver{
+  background-color: #d0d2d1;
+}
+.bronze{
+  background-color: #cd7f32;
+}
+.last{
+  background-color: #818182;  
+}
+  .headerimage{
+   display: block;
+   margin: 0 auto;
+   position: relative;
+   height: 150px;
+  }
+
+  .imagemain{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: flex-start;
+   margin: 0px;
+   height: 40px;
+   overflow: hidden;
+  }
+
+  .imageitem{
+    display: inline-flex;
+   filter: grayscale(100%);
+   min-height: 210px;
+   height: 100%;
+   object-fit: cover;
+  }
+
+  .infobar{  
+   background-color: #56042C;
+  }
+
+  .navbar{  
+   width:100%;
+   background-color: #FEC310;
+   margin-bottom: 5px;
+   height: 40px;
+  }
+
+  .navrow{
+    width:100%;
+   text-align: center;
+  }
+
+  .infoholder{
+   max-width: 800px;
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+  }
+
+    .navholder{
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+    width: 1080px;
+  }
+
+  .infoitem{
+   color: white;
+   font-size: 18px;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 10px 0;
+  }
+
+  .infotitle{
+   color: rgba(255,255,255,.4);
+   font-size: 15px;
+   text-align: center;
+   display: block;
+  }
+
+  .tab.container  {
+   max-width: 900px;
+   margin-top: 5px
+   margin-bottom: 5px
+  }
+
+  .tab button {
+     margin: 0 auto;
+     background-color: inherit;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     transition: 0.3s;
+     color: #060606;
+     text-align: center;     
+     font-size: 16px;
+   }
+
+  .tab button:hover {
+     color: black;
+     font-weight: bold;
+  }
+
+  .tab button.active {
+     color: black;
+     font-weight: bold;
+  }
+
+  .tabcontent {
+     display: flex;
+     padding: 25px 12px;
+     text-align: center;
+     padding-bottom: 0px;
+     width: 100%;
+  }
+
+  .countrylist{
+  display: inline-block;
+  list-style: none;
+  width: 16%;
+  font-size: 18px;
+  }
+
+.countrylist:hover .countryflag {
+  opacity: 0.3;
+}
+
+.middle {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle2 {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.countrylist:hover .middle {
+  opacity: 1;
+}
+
+  .groups{
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  }
+
+.groups:hover .countryflag2 {
+  opacity: 0.1;
+}
+.groups:hover .middle2 {
+  opacity: 1;
+}
+
+  .countryflag{
+   width: 75%;
+   border:1px solid #021a40;
+  }
+
+  .countryflag2{
+   width: 75%;
+   border:1px solid #021a40;
+   margin-bottom: 15px;
+  }
+
+  .sectionheader{
+   font-size: 32px;
+   font-weight: bold;  
+  }
+   .sectionheader2{
+   font-size: 20px;
+   font-weight: bold;
+  margin-bottom: 10px;
+  }
+
+  .liststuff{
+   list-style-type: none;
+   padding-left: 0;
+   padding-top: 10px;
+   margin-bottom:10px;
+  }
+
+  .tab{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.tabrules{
+  display: inline-block;
+  width: 100%;
+  max-width: 1080px;
+}
+
+
+.gameRules{
+  padding-top: 10px;
+}
+
+.eddie{  
+  position: relative;
+}
+
+.text2{
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.eventtable{
+  display: grid;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  padding: 0px 0px 00px 0px;
+  grid-template-columns: 10% 18% 18% 11% 11% 21% 11%;
+  grid-template-areas: "r1 r2 r3 r4 r5 s2 r6";
+}
+
+.tableheader{
+  display: inline-block;
+  position: relative;
+  padding: 0px 0px 10px 0px;
+  float: left;
+}
+
+.tablerow{
+    border-radius: 10px 10px 10px 10px;
+    border:1px solid #555;
+    margin-bottom: -1px;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
+    position: relative;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 10% 18% 18% 11% 11% 21% 11%;
+    grid-template-areas: "r1 r2 r3 r4 r5 s2 r6";
+    text-align: center;
+}
+
+.r1 {
+    grid-area: r1;
+}
+
+.r2 {
+    grid-area: r2;
+}
+.r3 {
+    grid-area: r3;
+}
+
+.r4 {
+    grid-area: r4;
+}
+.r5 {
+    grid-area: r5;
+}
+
+.r6 {
+    grid-area: r6;
+}
+
+.s2{
+  grid-area: s2;
+}
+
+.tablesection{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  padding-top:12px;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  color: #222;
+}
+.pad{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.padup{
+  padding-top:20px;
+}
+
+.medalimage{
+ padding: 4px 4px 4px 4px;
+  height: 46px;
+  width: auto;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -12px;
+}
+.championrow{
+    background-color: #bbb;
+}
+
+.ScoringTable{
+  display: grid;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  width: 40%;
+  padding: 0px 0px 0px 0px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: "r1 r2 r3 r4 r5";
+}
+.BeerPongTable{
+  display: grid;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  width: 50%;
+  padding: 0px 0px 0px 0px;
+  grid-template-columns: calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6);
+  grid-template-areas: "r1 r2 r3 r4 r5 r6";
+}
+.scoringtablesection{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  padding-top:5px;
+  padding-bottom:5px;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  color: #222;
+}
+.scoringtablerow{
+    border-radius: 10px 10px 10px 10px;
+    border:1px solid #555;
+    margin-bottom: -1px;
+    width: 40%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-color: #f4f4f4;
+    display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: "r1 r2 r3 r4 r5";
+    text-align: center;
+}
+
+.beerpongtablerow{
+    border-radius: 10px 10px 10px 10px;
+    border:1px solid #555;
+    margin-bottom: -1px;
+    width: 50%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-color: #f4f4f4;
+    display: grid;
+   grid-template-columns: calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6);
+   grid-template-areas: "r1 r2 r3 r4 r5 r6";
+    text-align: center;
+}
+
+.placementrow{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom: 20px;
+}
+
+.PlacementTable{
+  display: grid;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  width: 40%;
+  padding: 0px 0px 0px 0px;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "r1 r2";
+}
+
+.placementtablesection{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  padding-top:8px;
+  padding-bottom:8px;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  color: #222;
+}
+.placementtablerow{
+    border-radius: 10px 10px 10px 10px;
+    border:1px solid #555;
+    margin-bottom: -1px;
+    width: 40%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "r1 r2";
+    text-align: center;
+}
+
+.scheduletable{
+  border-radius: 10px 10px 10px 10px;
+    border:1px solid #555;
+    margin-bottom: -1px;
+    width: 30%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #f4f4f4;
+    display: grid;
+    text-align: center;
+}
+
+.othertable{
+  border-radius: 10px 10px 10px 10px;
+    border:1px solid #555;
+    margin-bottom: -1px;
+    width: 65%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-color: #f4f4f4;
+    display: grid;
+    text-align: center;
+}
+.note{
+  border-radius: 10px 10px 10px 10px;
+    border:1px solid #555;
+    margin-bottom: 10px;
+    padding-top:10px;
+    width: 40%;
+    height: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-color: #f4f4f4;
+    display: grid;
+    text-align: center;
+}
+
+.schedulenote{
+  width:30%;
+  height: auto;
+  padding-bottom:10px;
+  padding-left:10px;
+  padding-right:10px
+}
+
+#daysleft{
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.eddie:hover .text{
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.lightboximg{
+  height: 550px;
+  border-radius: 20px;
+    width: 550px;
+    object-fit: cover;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+a.lightbox img {
+height: 150px;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 94px 20px 20px 20px;
+}
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+left:0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+  
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+  overflow:none;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0;
+}
+
+
+</style>
+
+<title>BP World Cup 2022</title>
+</head>
+<body>
+    <div class="headerbar">
+        <div class="infobar">
+            <div class="infoholder container">
+                <div class="row">
+                    <div class="infoitem col-sm-3">
+                        <strong class="infotitle">DATE</strong> 10 DEC
+                    </div>
+                    <div class="infoitem col-sm-3">
+                        <strong class="infotitle">START TIME</strong> 1:00 PM
+                    </div>
+                    <div class="infoitem col-sm-3">
+                        <strong class="infotitle">LOCATION</strong> 23007 Fonthill Ave
+                    </div>
+                    <div class="infoitem col-sm-3">
+                        <strong class="infotitle">COUNTDOWN</strong> <p id="daysleft"></p>
+                        <script>
+                            var d = new Date();
+                            var b = new Date('12/10/2022');
+                            document.getElementById("daysleft").innerHTML = Math.ceil((b - d) / (1000 * 60 * 60 * 24)) + " days";
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab headerbar navbar">
+            <div class="navholder container">
+                <div class="row navrow ">
+                    <button class="tablinks col-sm-2" id="defaultOpen" onclick="openSection(event, 'Countries')">Countries</button>
+                    <button class="tablinks col-sm-2" onclick="openSection(event, 'Format')">Format & Groups</button>
+                    <button class="tablinks col-sm-2" onclick="openSection(event, 'Schedule')">Schedule & Notes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent container" id="Countries">
+            <div class="row text-center">
+                <div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/AustralianFlag.png" title="Australia">
+                            <div class="middle">
+                                <div class="text">Australia</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Cristina</li>
+                            <li>Suzie</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/CanadianFlag.png" title="Canada">
+                            <div class="middle">
+                                <div class="text">Canada</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Jen</li>
+                            <li>Sean</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/FrenchFlag.png" title="France">
+                            <div class="middle">
+                                <div class="text">France</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>David</li>
+                            <li>Vanessa</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/GermanFlag.png" title="Germany">
+                            <div class="middle">
+                                <div class="text">Germany</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Danny</li>
+                            <li>Rob</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/GreekFlag.png" title="Greece">
+                            <div class="middle">
+                                <div class="text">Greece</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>John</li>
+                            <li>Wyatt</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/JapaneseFlag.png" title="Japan">
+                            <div class="middle">
+                                <div class="text">Japan</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Kris</li>
+                            <li>Lexa</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/MexicanFlag.png" title="Mexico">
+                            <div class="middle">
+                                <div class="text">Mexico</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Eddie Z</li>
+                            <li>Kayla</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TongaFlag.png" title="Tonga">
+                            <div class="middle">
+                                <div class="text">Tonga</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Charlie</li>
+                            <li>Daisy</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/ThaiFlag.jpg" title="Thailand">
+                            <div class="middle">
+                                <div class="text">Thailand</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Gaivalee</li>
+                            <li>Kylee</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/SingaporeFlag.jpg" title="Singapore">
+                            <div class="middle">
+                                <div class="text">Singapore</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Bre</li>
+                            <li>Cathy</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TibetFlag.png" title="Tibet">
+                            <div class="middle">
+                                <div class="text">Tibet</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Dustin</li>
+                            <li>Sam</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
+                            <div class="middle">
+                                <div class="text">TBD</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Ari</li>
+                            <li>Phil</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/AfghanistanFlag.png" title="Afghanistan">
+                            <div class="middle">
+                                <div class="text">Afghanistan</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Kambiz</li>
+                            <li>Kaneshka</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/BrazilFlag.png" title="Brazil">
+                            <div class="middle">
+                                <div class="text">Brazil</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Serg</li>
+                            <li>Tomas</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/ItalianFlag.png" title="Italy">
+                            <div class="middle">
+                                <div class="text">Italy</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Omid</li>
+                            <li>Travis</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/LaosFlag.png" title="Laos">
+                            <div class="middle">
+                                <div class="text">Laos</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Dorian</li>
+                            <li>Eddie N</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/IrishFlag.png" title="Ireland">
+                            <div class="middle">
+                                <div class="text">Ireland</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Eric</li>
+                            <li>Matt</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/NewZealandFlag.png" title="New Zealand">
+                            <div class="middle">
+                                <div class="text">New Zealand</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Amanda</li>
+                            <li>Teela</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/CubanFlag.png" title="Cuba">
+                            <div class="middle">
+                                <div class="text">Cuba</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Adam</li>
+                            <li>Max</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/BelgiumFlag.png" title="Belgium">
+                            <div class="middle">
+                                <div class="text">Belgium</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Kyle</li>
+                            <li>Stephen</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/DenmarkFlag.png" title="Denmark">
+                            <div class="middle">
+                                <div class="text">Denmark</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Cheryl</li>
+                            <li>Geethu</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/AmericanFlag.png" title="USA">
+                            <div class="middle">
+                                <div class="text">USA</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Alex</li>
+                            <li>Jer</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
+                            <div class="middle">
+                                <div class="text">TBD</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>TBD</li>
+                            <li>TBD</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
+                            <div class="middle">
+                                <div class="text">TBD</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>TBD</li>
+                            <li>TBD</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent container container2" id="Format">
+            <div class="col-sm-4 countrylist">Qualifiers (Placement Matches)</div>
+            <div class="col-sm-4 countrylist">Groups (Double Elim)</div>
+            <div class="col-sm-4 countrylist">Knockout Stage (Single Elim)</div>
+        </div>
+
+        <div class="tabcontent container" id="Schedule">
+            <p class="note schedulenote">The first official matches start at exactly 2:30pm, don't be late! For every 1 minute your team is late you will be penalized 1 cup. <b>10 Minutes late is a forfeit.</b></p>
+            <div class="container-flud scheduletable">
+                <div class="pad"><b>1:00-2:30pm</b> Ensenada Surf n Turf Fish Tacos + hang out and warm up.</div>
+                <div class="pad"><b>2:30pm</b> Tournament begins</div>
+                <div class="pad"><b>4:30pm</b> L&L BBQ Catering Pans</div>
+                <div class="pad"><b>~8:00pm</b> Post tourney hangs and pizza</div>
+            </div>
+            <p class="note schedulenote padup">The tourney should finish up by around 8pm,<br>but we will take as long as we need!</p>
+            <div class="note schedulenote padup">
+                <div class="pad"><b>Notes</b></div>
+                <div class="pad">No drinking is required to participate, everyone get home safe!</div>
+                <div class="pad">Dressing in a jersey or uniform of any kind is basically required.</div>
+                <div class="pad">The tourney should finish up by around 8pm, but we will take as long as we need to.</div>
+                <div class="pad">We will provide many Coors and Seltzers from Costco, bringing beer from your country is highly encouraged.</div>
+                <div class="pad">Be hype.</div>
+            </div>
+        </div>
+    </div>
+        <script>
+            function openSection(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+        </script>
+
+</body>
+</html>
