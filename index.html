@@ -137,7 +137,9 @@
      padding-bottom: 0px;
      width: 100%;
   }
-
+      .displayflex {
+          display: flex !important;
+      }
   .countrylist{
   display: inline-block;
   list-style: none;
@@ -160,28 +162,38 @@
   text-align: center;
 }
 
-.middle2 {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+      .middle2 {
+          transition: .2s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+      }
+      .middle3 {
+          transition: .2s ease;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+      }
 
 .countrylist:hover .middle {
   opacity: 1;
 }
 
-  .groups{
-  display: inline-block;
-  list-style: none;
-  width: 100%;
-  font-size: 18px;
-  line-height: 30px;
-  }
+      .groups {
+          display: flex;
+          list-style: none;
+          width: 100%;
+          font-size: 18px;
+          line-height: 30px;
+          margin-left: 30px;
+      }
 
 .groups:hover .countryflag2 {
   opacity: 0.1;
@@ -195,22 +207,38 @@
    border:1px solid #021a40;
   }
 
-  .countryflag2{
-   width: 75%;
-   border:1px solid #021a40;
-   margin-bottom: 15px;
-  }
+      .countryflag2 {
+          max-width: 110px;
+          border: 1px solid #021a40;
+          margin-bottom: 15px;
+          margin-left: 10px;
+      }
 
   .sectionheader{
    font-size: 32px;
    font-weight: bold;  
   }
-   .sectionheader2{
-   font-size: 20px;
-   font-weight: bold;
-  margin-bottom: 10px;
-  }
-
+      .sectionheader2 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          width: 64px;
+      }
+      .sectionheader3 {
+          font-size: 16px;
+          font-weight: bold;
+      }
+      .vs {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          margin-left:10px;
+      }
+.formatdesc{
+    font-size: 13px;
+}
   .liststuff{
    list-style-type: none;
    padding-left: 0;
@@ -244,7 +272,7 @@
 }
 
 .text2{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -667,6 +695,18 @@ top: 0;
                 <div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
+                            <img class="countryflag" src="Images/AfghanistanFlag.png" title="Afghanistan">
+                            <div class="middle">
+                                <div class="text">Afghanistan</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Kambiz</li>
+                            <li>Kaneshka</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
                             <img class="countryflag" src="Images/AustralianFlag.png" title="Australia">
                             <div class="middle">
                                 <div class="text">Australia</div>
@@ -679,6 +719,30 @@ top: 0;
                     </div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
+                            <img class="countryflag" src="Images/BelgiumFlag.png" title="Belgium">
+                            <div class="middle">
+                                <div class="text">Belgium</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Kyle</li>
+                            <li>Stephen</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/BrazilFlag.png" title="Brazil">
+                            <div class="middle">
+                                <div class="text">Brazil</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Serg</li>
+                            <li>Tomas</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
                             <img class="countryflag" src="Images/CanadianFlag.png" title="Canada">
                             <div class="middle">
                                 <div class="text">Canada</div>
@@ -687,6 +751,30 @@ top: 0;
                         <ul class="liststuff">
                             <li>Jen</li>
                             <li>Sean</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/CubanFlag.png" title="Cuba">
+                            <div class="middle">
+                                <div class="text">Cuba</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Adam</li>
+                            <li>Max</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/DenmarkFlag.png" title="Denmark">
+                            <div class="middle">
+                                <div class="text">Denmark</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Cheryl</li>
+                            <li>Geethu</li>
                         </ul>
                     </div>
                     <div class="col-sm-2 countrylist">
@@ -727,110 +815,14 @@ top: 0;
                     </div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
-                            <img class="countryflag" src="Images/JapaneseFlag.png" title="Japan">
+                            <img class="countryflag" src="Images/IrishFlag.png" title="Ireland">
                             <div class="middle">
-                                <div class="text">Japan</div>
+                                <div class="text">Ireland</div>
                             </div>
                         </div>
                         <ul class="liststuff">
-                            <li>Kris</li>
-                            <li>Lexa</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/MexicanFlag.png" title="Mexico">
-                            <div class="middle">
-                                <div class="text">Mexico</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Eddie Z</li>
-                            <li>Kayla</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/TongaFlag.png" title="Tonga">
-                            <div class="middle">
-                                <div class="text">Tonga</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Charlie</li>
-                            <li>Daisy</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/ThaiFlag.jpg" title="Thailand">
-                            <div class="middle">
-                                <div class="text">Thailand</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Gaivalee</li>
-                            <li>Kylee</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/SingaporeFlag.jpg" title="Singapore">
-                            <div class="middle">
-                                <div class="text">Singapore</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Bre</li>
-                            <li>Cathy</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/TibetFlag.png" title="Tibet">
-                            <div class="middle">
-                                <div class="text">Tibet</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Dustin</li>
-                            <li>Sam</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
-                            <div class="middle">
-                                <div class="text">TBD</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Ari</li>
-                            <li>Phil</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/AfghanistanFlag.png" title="Afghanistan">
-                            <div class="middle">
-                                <div class="text">Afghanistan</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Kambiz</li>
-                            <li>Kaneshka</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/BrazilFlag.png" title="Brazil">
-                            <div class="middle">
-                                <div class="text">Brazil</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>Serg</li>
-                            <li>Tomas</li>
+                            <li>Eric</li>
+                            <li>Matt</li>
                         </ul>
                     </div>
                     <div class="col-sm-2 countrylist">
@@ -847,6 +839,18 @@ top: 0;
                     </div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
+                            <img class="countryflag" src="Images/JapaneseFlag.png" title="Japan">
+                            <div class="middle">
+                                <div class="text">Japan</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Kris</li>
+                            <li>Lexa</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
                             <img class="countryflag" src="Images/LaosFlag.png" title="Laos">
                             <div class="middle">
                                 <div class="text">Laos</div>
@@ -859,14 +863,14 @@ top: 0;
                     </div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
-                            <img class="countryflag" src="Images/IrishFlag.png" title="Ireland">
+                            <img class="countryflag" src="Images/MexicanFlag.png" title="Mexico">
                             <div class="middle">
-                                <div class="text">Ireland</div>
+                                <div class="text">Mexico</div>
                             </div>
                         </div>
                         <ul class="liststuff">
-                            <li>Eric</li>
-                            <li>Matt</li>
+                            <li>Eddie Z</li>
+                            <li>Kayla</li>
                         </ul>
                     </div>
                     <div class="col-sm-2 countrylist">
@@ -883,38 +887,86 @@ top: 0;
                     </div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
-                            <img class="countryflag" src="Images/CubanFlag.png" title="Cuba">
+                            <img class="countryflag" src="Images/SingaporeFlag.jpg" title="Singapore">
                             <div class="middle">
-                                <div class="text">Cuba</div>
+                                <div class="text">Singapore</div>
                             </div>
                         </div>
                         <ul class="liststuff">
-                            <li>Adam</li>
-                            <li>Max</li>
+                            <li>Bre</li>
+                            <li>Cathy</li>
                         </ul>
                     </div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
-                            <img class="countryflag" src="Images/BelgiumFlag.png" title="Belgium">
+                            <img class="countryflag" src="Images/SwissFlag.png" title="Switzerland">
                             <div class="middle">
-                                <div class="text">Belgium</div>
+                                <div class="text">Switzerland</div>
                             </div>
                         </div>
                         <ul class="liststuff">
-                            <li>Kyle</li>
-                            <li>Stephen</li>
+                            <li>Celeste</li>
+                            <li>Precious</li>
                         </ul>
                     </div>
                     <div class="col-sm-2 countrylist">
                         <div class="eddie">
-                            <img class="countryflag" src="Images/DenmarkFlag.png" title="Denmark">
+                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
                             <div class="middle">
-                                <div class="text">Denmark</div>
+                                <div class="text">TBD</div>
                             </div>
                         </div>
                         <ul class="liststuff">
-                            <li>Cheryl</li>
-                            <li>Geethu</li>
+                            <li>Ari</li>
+                            <li>Phil</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
+                            <div class="middle">
+                                <div class="text">TBD</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>TBD</li>
+                            <li>TBD</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/ThaiFlag.jpg" title="Thailand">
+                            <div class="middle">
+                                <div class="text">Thailand</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Gaivalee</li>
+                            <li>Kylee</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TibetFlag.png" title="Tibet">
+                            <div class="middle">
+                                <div class="text">Tibet</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Dustin</li>
+                            <li>Sam</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 countrylist">
+                        <div class="eddie">
+                            <img class="countryflag" src="Images/TongaFlag.png" title="Tonga">
+                            <div class="middle">
+                                <div class="text">Tonga</div>
+                            </div>
+                        </div>
+                        <ul class="liststuff">
+                            <li>Charlie</li>
+                            <li>Daisy</li>
                         </ul>
                     </div>
                     <div class="col-sm-2 countrylist">
@@ -929,61 +981,458 @@ top: 0;
                             <li>Jer</li>
                         </ul>
                     </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
-                            <div class="middle">
-                                <div class="text">TBD</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>TBD</li>
-                            <li>TBD</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 countrylist">
-                        <div class="eddie">
-                            <img class="countryflag" src="Images/TBDFlag.png" title="TBD">
-                            <div class="middle">
-                                <div class="text">TBD</div>
-                            </div>
-                        </div>
-                        <ul class="liststuff">
-                            <li>TBD</li>
-                            <li>TBD</li>
-                        </ul>
-                    </div>
                 </div>
                 <div>
                 </div>
             </div>
         </div>
 
-        <div class="tabcontent container container2" id="Format">
-            <div class="col-sm-4 countrylist">Qualifiers (Placement Matches)</div>
-            <div class="col-sm-4 countrylist">Groups (Double Elim)</div>
-            <div class="col-sm-4 countrylist">Knockout Stage (Single Elim)</div>
-        </div>
-
-        <div class="tabcontent container" id="Schedule">
-            <p class="note schedulenote">The first official matches start at exactly 2:30pm, don't be late! For every 1 minute your team is late you will be penalized 1 cup. <b>10 Minutes late is a forfeit.</b></p>
-            <div class="container-flud scheduletable">
-                <div class="pad"><b>1:00-2:30pm</b> Ensenada Surf n Turf Fish Tacos + hang out and warm up.</div>
-                <div class="pad"><b>2:30pm</b> Tournament begins</div>
-                <div class="pad"><b>4:30pm</b> L&L BBQ Catering Pans</div>
-                <div class="pad"><b>~8:00pm</b> Post tourney hangs and pizza</div>
+        <div class="tabcontent  container" id="Format">
+            <div class="displayflex">
+                <div class="col-sm-4 text-center">
+                    <p class="sectionheader3">Placements (Round Robin)</p>
+                    <p class="formatdesc">Play each team in your group once. Keep track of cups made in losses.<br>No overtime, tie on successful rebuttal. Group ties broken by cups made.</p>
+                    <div class="groups ">
+                        <div class="sectionheader2">PA</div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/ItalianFlag.png" title="Italy">
+                            <div class="middle2">
+                                <div class="text2">Omid<br>Travis</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/JapaneseFlag.png" title="Japan">
+                            <div class="middle2">
+                                <div class="text2">Kris<br>Lexa</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/LaosFlag.png" title="Laos">
+                            <div class="middle2">
+                                <div class="text2">Dorian<br>Eddie N</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">PB</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/GreekFlag.png" title="Greece">
+                            <div class="middle2">
+                                <div class="text2">John<br>Wyatt</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/BelgiumFlag.png" title="Belgium">
+                            <div class="middle2">
+                                <div class="text2">Kyle<br>Stephen</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/CubanFlag.png" title="Cuba">
+                            <div class="middle2">
+                                <div class="text2">Adam<br>Max</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">PC</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TibetFlag.png" title="Tibet">
+                            <div class="middle2">
+                                <div class="text2">Dustin<br>Sam</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/AfghanistanFlag.png" title="Afghanistan">
+                            <div class="middle2">
+                                <div class="text2">Kambiz<br>Kaneshka</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TBDFlag.png" title="TBD">
+                            <div class="middle2">
+                                <div class="text2">Ari<br>Phil</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">PD</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/MexicanFlag.png" title="Mexico">
+                            <div class="middle2">
+                                <div class="text2">Eddie<br>Kayla</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/DenmarkFlag.png" title="Denmark">
+                            <div class="middle2">
+                                <div class="text2">Cheryl<br>Geethu</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/SwissFlag.png" title="Switzerland">
+                            <div class="middle2">
+                                <div class="text2">Celeste<br>Precious</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">PE</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/IrishFlag.png" title="Ireland">
+                            <div class="middle2">
+                                <div class="text2">Eric<br>Matt</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/FrenchFlag.png" title="France">
+                            <div class="middle2">
+                                <div class="text2">David<br>Vanessa</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/SingaporeFlag.jpg" title="Singapore">
+                            <div class="middle2">
+                                <div class="text2">Bre<br>Cathy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">PF</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/GermanFlag.png" title="Germany">
+                            <div class="middle2">
+                                <div class="text2">Danny<br>Rob</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TongaFlag.png" title="Tonga">
+                            <div class="middle2">
+                                <div class="text2">Charlie<br>Daisy</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/NewZealandFlag.png" title="New Zealand">
+                            <div class="middle2">
+                                <div class="text2">Amanda<br>Teela</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">PG</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/CanadianFlag.png" title="Canada">
+                            <div class="middle2">
+                                <div class="text2">Jen<br>Sean</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TBDFlag.png" title="TBD">
+                            <div class="middle2">
+                                <div class="text2">TBD<br>TBD</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/ThaiFlag.jpg" title="Thailand">
+                            <div class="middle2">
+                                <div class="text2">Gaivalee<br>Kylee</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">PH</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/AmericanFlag.png" title="USA">
+                            <div class="middle2">
+                                <div class="text2">Alex<br>Jer</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/AustralianFlag.png" title="Australia">
+                            <div class="middle2">
+                                <div class="text2">Cristina<br>Suzie</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/BrazilFlag.png" title="Brazil">
+                            <div class="middle2">
+                                <div class="text2">Serg<br>Tom</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <p class="sectionheader3">Groups (Double Elim)</p>
+                    <p class="formatdesc">3-team Double Elim Bracket, 1st team has a bye. Must win your group to advance.<br>Overtime goes to shootout on successful rebuttal.</p>
+                    <div class="groups ">
+                        <div class="sectionheader2">A</div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PA1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PB2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PC3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">B</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PB1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PA2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PD3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">C</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PC1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PD2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PA3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">D</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PD1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PC2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PB3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">E</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PE1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PF2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PG3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">F</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PF1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PE2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PH3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">G</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PG1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PH2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PE3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <p class="sectionheader2">H</p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PH1</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PG2</div>
+                            </div>
+                        </div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">PF3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <p class="sectionheader3">
+                        Round of 8 (Single Elim)
+                    </p>
+                    <p class="formatdesc">Single Elim Bracket Begins! May the best team win.<br>Overtime goes to shootout on successful rebuttal.</p>
+                    <div class="groups ">
+                        <div class="sectionheader2">Match I</div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">A1</div>
+                            </div>
+                        </div>
+                        <p class="vs">
+                            VS
+                        </p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">B1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups ">
+                        <div class="sectionheader2">Match J</div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">C1</div>
+                            </div>
+                        </div>
+                        <p class="vs">
+                            VS
+                        </p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">D1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups ">
+                        <div class="sectionheader2">Match K</div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">E1</div>
+                            </div>
+                        </div>
+                        <p class="vs">
+                            VS
+                        </p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">F1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groups ">
+                        <div class="sectionheader2">Match L</div>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">G1</div>
+                            </div>
+                        </div>
+                        <p class="vs">
+                            VS
+                        </p>
+                        <div class="eddie">
+                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                            <div class="middle3">
+                                <div class="text2">H1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="note schedulenote padup">The tourney should finish up by around 8pm,<br>but we will take as long as we need!</p>
-            <div class="note schedulenote padup">
-                <div class="pad"><b>Notes</b></div>
-                <div class="pad">No drinking is required to participate, everyone get home safe!</div>
-                <div class="pad">Dressing in a jersey or uniform of any kind is basically required.</div>
-                <div class="pad">The tourney should finish up by around 8pm, but we will take as long as we need to.</div>
-                <div class="pad">We will provide many Coors and Seltzers from Costco, bringing beer from your country is highly encouraged.</div>
-                <div class="pad">Be hype.</div>
+            </div>
+            <div class="tabcontent container" id="Schedule">
+                <p class="note schedulenote">The first official matches start at exactly 2:30pm, don't be late! For every 1 minute your team is late you will be penalized 1 cup. <b>10 Minutes late is a forfeit.</b></p>
+                <div class="container-flud scheduletable">
+                    <div class="pad"><b>1:00-2:30pm</b> Ensenada Surf n Turf Fish Tacos + hang out and warm up.</div>
+                    <div class="pad"><b>2:30pm</b> Tournament begins</div>
+                    <div class="pad"><b>4:30pm</b> L&L BBQ Catering Pans</div>
+                    <div class="pad"><b>~8:00pm</b> Post tourney hangs and pizza</div>
+                </div>
+                <p class="note schedulenote padup">The tourney should finish up by around 8pm,<br>but we will take as long as we need!</p>
+                <div class="note schedulenote padup">
+                    <div class="pad"><b>Notes</b></div>
+                    <div class="pad">No drinking is required to participate, everyone get home safe!</div>
+                    <div class="pad">Dressing in a jersey or uniform of any kind is basically required.</div>
+                    <div class="pad">The tourney should finish up by around 8pm, but we will take as long as we need to.</div>
+                    <div class="pad">We will provide many Coors and Seltzers from Costco, bringing beer from your country is highly encouraged.</div>
+                    <div class="pad">Be hype.</div>
+                </div>
             </div>
         </div>
-    </div>
+        </div>
         <script>
             function openSection(evt, tabName) {
                 var i, tabcontent, tablinks;
