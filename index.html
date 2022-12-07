@@ -175,7 +175,7 @@
       .middle3 {
           transition: .2s ease;
           position: absolute;
-          top: 50%;
+          top: 45%;
           left: 50%;
           transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
@@ -200,10 +200,19 @@
           width: 100%;
           font-size: 18px;
           line-height: 30px;
-          margin-left: 30px;
+          margin-left: 0px;
+          flex-wrap: wrap
       }
 
-
+      .roundof8 {
+          display: flex;
+          list-style: none;
+          width: 100%;
+          font-size: 18px;
+          line-height: 30px;
+          margin-left: 80px;
+          flex-wrap: wrap
+      }
 
 .groups:hover .countryflag2 {
   opacity: 0.1;
@@ -224,12 +233,12 @@
           margin-left: 10px;
       }
       .placeholderflag {
-          width: 110px;
           border: 1px solid #021a40;
           margin-bottom: 15px;
           margin-left: 10px;
           height: 74px;
-          background-color: #D4D4D4;
+          background-color: #e1e1e1;
+          border-radius: 3px;
       }
 
   .sectionheader{
@@ -241,7 +250,10 @@
           font-weight: bold;
           margin-bottom: 20px;
           margin-top: 20px;
-          width: 64px;
+          width: 50px;
+      }
+      .groupholder{
+          padding:0px 0px 0px 0px;
       }
       .sectionheader3 {
           font-size: 16px;
@@ -293,6 +305,10 @@
   font-size: 16px;
   line-height: 20px;
 }
+      .textgroups {
+          font-size: 14px;
+          line-height: 26px;
+      }
 
 .eventtable{
   display: grid;
@@ -1184,169 +1200,113 @@ top: 0;
                     <p class="formatdesc">6-team Double Elim Bracket, finish 1st or 2nd in your group to advance.<br>Overtime goes to shootout on successful rebuttal.</p>
                     <div class="groups2 ">
                         <div class="sectionheader2">A</div>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PA1</div>
+                                <div class="textgroups">PG 2nd<br />PC 3rd</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PG2</div>
+                                <div class="textgroups">PA 1st<br />BYE</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="sectionheader2"></div>
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PC3</div>
+                                <div class="textgroups">PH 2nd<br />PD 3rd</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="groups2">
-                        <p class="sectionheader2"></p>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PB1</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PH2</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PD3</div>
+                                <div class="textgroups">PB 1st<br />BYE</div>
                             </div>
                         </div>
                     </div>
-                    <div class="groups2">
-                        <p class="sectionheader2">B</p>
-                        <div class="eddie">
+                    <div class="groups2 ">
+                        <div class="sectionheader2">B</div>
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PC1</div>
+                                <div class="textgroups">PE 2nd<br />PA 3rd</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PE2</div>
+                                <div class="textgroups">PC 1st<br />BYE</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="sectionheader2"></div>
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PA3</div>
+                                <div class="textgroups">PF 2nd<br />PB 3rd</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="groups2">
-                        <p class="sectionheader2"></p>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PD1</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PF2</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PB3</div>
+                                <div class="textgroups">PD 1st<br />BYE</div>
                             </div>
                         </div>
                     </div>
-                    <div class="groups2">
-                        <p class="sectionheader2">C</p>
-                        <div class="eddie">
+                    <div class="groups2 ">
+                        <div class="sectionheader2">C</div>
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PE1</div>
+                                <div class="textgroups">PC 2nd<br />PG 3rd</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PC2</div>
+                                <div class="textgroups">PE 1st<br />BYE</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="sectionheader2"></div>
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PG3</div>
+                                <div class="textgroups">PD 2nd<br />PH 3rd</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="groups2">
-                        <p class="sectionheader2"></p>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PF1</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PD2</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PH3</div>
+                                <div class="textgroups">PF 1st<br />BYE</div>
                             </div>
                         </div>
                     </div>
-                    <div class="groups2">
-                        <p class="sectionheader2">D</p>
-                        <div class="eddie">
+                    <div class="groups2 ">
+                        <div class="sectionheader2">D</div>
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PG1</div>
+                                <div class="textgroups">PA 2nd<br />PE 3rd</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PA2</div>
+                                <div class="textgroups">PG 1st<br />BYE</div>
                             </div>
                         </div>
-                        <div class="eddie">
+                        <div class="sectionheader2"></div>
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PE3</div>
+                                <div class="textgroups">PB 2nd<br />PF 3rd</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="groups2">
-                        <p class="sectionheader2"></p>
-                        <div class="eddie">
+                        <div class="eddie col-sm-5 groupholder">
                             <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">PH1</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PB2</div>
-                            </div>
-                        </div>
-                        <div class="eddie">
-                            <div class="placeholderflag"></div>
-                            <div class="middle3">
-                                <div class="text2">PF3</div>
+                                <div class="textgroups">PH 1st<br />BYE</div>
                             </div>
                         </div>
                     </div>
@@ -1356,75 +1316,39 @@ top: 0;
                         Round of 8 (Single Elim)
                     </p>
                     <p class="formatdesc">Single Elim Bracket Begins! May the best team win.<br>Overtime goes to shootout on successful rebuttal.</p>
-                    <div class="groups">
-                        <div class="sectionheader2">Match I</div>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                    <div class="roundof8">
+                        <div class="sectionheader2">I</div>
+                        <div class="eddie col-sm-5 groupholder">
+                            <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">A1</div>
-                            </div>
-                        </div>
-                        <p class="vs">
-                            VS
-                        </p>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
-                            <div class="middle3">
-                                <div class="text2">C2</div>
+                                <div class="textgroups">A 1st<br />C 2nd</div>
                             </div>
                         </div>
                     </div>
-                    <div class="groups ">
-                        <div class="sectionheader2">Match J</div>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                    <div class="roundof8">
+                        <div class="sectionheader2">J</div>
+                        <div class="eddie col-sm-5 groupholder">
+                            <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">B1</div>
-                            </div>
-                        </div>
-                        <p class="vs">
-                            VS
-                        </p>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
-                            <div class="middle3">
-                                <div class="text2">D2</div>
+                                <div class="textgroups">B 1st<br />D 2nd</div>
                             </div>
                         </div>
                     </div>
-                    <div class="groups ">
-                        <div class="sectionheader2">Match K</div>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                    <div class="roundof8">
+                        <div class="sectionheader2">K</div>
+                        <div class="eddie col-sm-5 groupholder">
+                            <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">C1</div>
-                            </div>
-                        </div>
-                        <p class="vs">
-                            VS
-                        </p>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
-                            <div class="middle3">
-                                <div class="text2">A2</div>
+                                <div class="textgroups">C 1st<br />A 2nd</div>
                             </div>
                         </div>
                     </div>
-                    <div class="groups ">
-                        <div class="sectionheader2">Match L</div>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
+                    <div class="roundof8">
+                        <div class="sectionheader2">L</div>
+                        <div class="eddie col-sm-5 groupholder">
+                            <div class="placeholderflag"></div>
                             <div class="middle3">
-                                <div class="text2">D1</div>
-                            </div>
-                        </div>
-                        <p class="vs">
-                            VS
-                        </p>
-                        <div class="eddie">
-                            <img class="countryflag2" src="Images/TempFlag.png" title="Temp">
-                            <div class="middle3">
-                                <div class="text2">B2</div>
+                                <div class="textgroups">D 1st<br />B 2nd</div>
                             </div>
                         </div>
                     </div>
